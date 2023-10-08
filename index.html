@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website | Rasyied Hidayat</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <section id="header">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#"><span>Rasyied</span>Hidayat</a>
+          </div>
+          <div class="nav-menu">
+            <ul id="sidemenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="bottom-left">
+            <h1 class="name">Rasyied <span> Hidayat</span></h1>
+            <h3 class="profession">- IT Staff (Fullstack Laravel Developer)</h3>
+            <p class="short-desc">
+              I have been working since 2022. I am proficient in IT Staff.
+            </p>
+            <a href="assets/CV-Rasyied.pdf" target="_blank" class="btn-cv" download
+              >Download CV</a
+            >
+          </div>
+          <div class="bottom-right">
+            <!-- <a href="#"><i class="fa-brands fa-facebook"></i></a> -->
+            <a href="https://www.instagram.com/rasyied4/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/rasyied24/Perpustakaan" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rasyied-hidayat-110581235/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section id="about">
+        <div class="about-left">
+          <img src="assets/Foto.jpg" alt="Rasyied" />
+        </div>
+        <div class="about-right">
+          <div class="section-title">
+            <h2 class="sub-title">About Me</h2>
+            <h3 class="title">IT Staff (Fullstack Laravel Developer)</h3>
+          </div>
+          <p class="desc">
+            My name is Rasyied Hidayat, since 2022 I have been working as IT Staff at the company PT Intercity Kerlipan.
+            I have experience as a teacher at Vocational School 1 Cikini College.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>              
+              <li><span>Web Development</span><br />Web application development using Laravel 8.</li>
+              <li><span>Web Design</span><br />Design Web using HTML, CSS, Javascript, Bootstrap.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>July 2022 - July 2023</span><br />
+                IT Staff at PT Intercity Kerlipan.
+              </li>
+              <li>
+                <span>November 2019 - Februari 2022</span><br />Teacher at SMK 1 Perguruan Cikini
+              </li>
+              <li>
+                <span>2019 - 2020</span><br />Trainer Robotic at Tbotic
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2015 - 2019</span><br /> Informatics Engineering at STMIK Muhammadiyah Jakarta
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Service section -->
+      <section id="service">
+        <div class="section-title">
+          <h2 class="sub-title">My Services</h2>
+          <h3 class="title">A brief of Offerting Services</h3>
+        </div>
+        <div class="services">
+          
+          <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Wordpress</h2>
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              fugit optio dolore.
+            </p> -->
+          </div>
+          
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Web Development</h2>
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              fugit optio dolore.
+            </p> -->
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section id="portfolio">
+        <div class="section-title">
+          <h2 class="sub-title">My Portfolio</h2>
+          <h3 class="title">Awesome Works</h3>
+          <div class="project-list">
+            <div class="project">
+              <img src="assets/mockup-perpus.png" alt="project1" />
+              <div class="layer">
+                <h3>Perpustakaan</h3>
+                <p>
+                  Using laravel technology, dashboard templates, html, css, javascript
+                </p>
+                <a href="https://github.com/rasyied24/Perpustakaan"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Contact section -->
+      <section id="contact">
+        <div class="section-title">
+          <h2 class="sub-title">Contact</h2>
+          <h3 class="title">Get in Touch</h3>
+        </div>
+        <div class="content">
+          <div class="contact-left">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">
+                Send Message <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+          <div class="vl"></div>
+          <div class="contact-right">
+            <div class="col address">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="info">
+                <h2 class="title">Address</h2>
+                <p>Jl. Swadaya 1 no.36, Pejaten Timur, Pasar Minggu, Jakarta Selatan.</p>
+              </div>
+            </div>
+            <div class="col phone">
+              <i class="fa-solid fa-phone"></i>
+              <div class="info">
+                <h2 class="title">Phone</h2>
+                <p>085771137286</p>
+              </div>
+            </div>
+            <div class="col email">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <h2 class="title">Email</h2>
+                <p>rasyiedhidayat81@gmail.com</p>
+              </div>
+            </div>
+            <div class="col website">
+              <i class="fa-solid fa-globe"></i>
+              <div class="info">
+                <h2 class="title">LinkedIn</h2>
+                <p>https://www.linkedin.com/in/rasyied-hidayat-110581235/</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright ©️ RPortfolio | Made with
+            <i class="fa-solid fa-heart"></i> by
+            <a href="#">Rasyied-Hidayat</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
